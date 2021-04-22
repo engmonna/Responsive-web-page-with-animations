@@ -1,0 +1,633 @@
+/****************************************START CSS PUBLIC******************************/
+*
+{
+    box-sizing: border-box;
+}
+body
+ {
+    font-family: 'Poppins', sans-serif;
+        color: #787878;
+        font-weight: 400;
+        font-size: 16px;
+}
+ p 
+{
+    font-size: 15px;
+    color: #748182;
+}
+.bg-white
+{
+    background-color: #fff;
+}
+.btn-shadow {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+.color-green
+{
+    color: #00c3da !important;
+}
+/****************************************start navbar******************************/
+.social-icon
+{
+    border-left: 1px solid #748182;
+}
+#navbar
+{
+    border-bottom: 1px solid #748182;
+}
+.navbar-dark .navbar-nav .nav-link,.navbar-dark .navbar-nav .nav-link:hover
+{
+color: #fff;
+font-size: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.nav-item
+{
+    margin:0px 10px
+}
+
+
+@media screen  and (max-width:991px)  
+{
+        #navbarNav ul  {
+        text-align: left;
+        background-color: #fff;
+        padding-bottom: 30px;
+        }
+        .navbar-dark .navbar-nav .nav-link
+        {
+        color:#1c1c1c
+        }
+        .navbar-dark .navbar-nav .active>.nav-link
+        {
+            color:#1c1c1c;
+        }
+        #navbarNav ul li a:hover
+        {
+            color:#1c1c1c;
+        }
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .social-icon
+        {
+            display: none;
+        }
+
+        
+}
+/****************************************ENF CSS NAV BAR******************************/
+
+/****************************************Start Header******************************/
+.header-slide-1
+{
+    background-image: url(../images/bg-image-28.jpg);
+  
+}
+.header-slide-2
+{
+    background-image: url(../images/bg-image-29.jpg);
+}
+.header-slide-1,.header-slide-2
+{
+    background-size: cover;
+    background-position: top;
+}
+.layer
+{
+background-color: rgba(31, 31, 31, 0.55);
+}
+
+ 
+.layer h1
+{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 6rem;
+    margin-bottom: 20px;
+    transition: opacity 1s ease;
+    animation-name: myfirst;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+   
+}
+@keyframes myfirst{
+    0%{  opacity: 0;}
+    80%{  opacity: 0;}
+    100%{  opacity: 1;}
+    
+
+}
+.layer h4
+{
+    opacity: 0;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 25px;
+    animation-name: myfirst;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+.layer-btns
+{
+    opacity: 0;
+    animation-name: myfirst;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.btn-green
+{
+    color: #fff;
+    background-color: #00c3da;
+}
+ .btn-green:hover 
+ {
+    color: #fff;
+    transform: translateY(-1px);
+}
+.btn-outline-light:hover
+{transform: translateY(-1px);}
+.btn
+{
+    padding: 14px 30px;
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: transform .3s ease;
+
+}
+header .carousel-control-prev {
+    position: absolute;
+    top:45vh;
+    left:0px;
+width:70px;
+height:5vh;
+border: 1px solid #fff;
+border-bottom: 0px;
+font-size: 18px;
+color: #fff;
+text-align: center;
+justify-content: center;
+}
+header .carousel-control-next {
+    position: absolute;
+    top:50vh;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+width: 70px;
+height: 5vh;
+border: 1px solid #fff;
+font-size: 18px;
+color: #fff;
+justify-content: center;
+}
+header .carousel-control-prev::after ,header .carousel-control-next::after {
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,.6);
+    transition:width .5s  ;
+   
+}
+header .carousel-control-prev:hover,header .carousel-control-next:hover,header .carousel-control-prev:focus,header .carousel-control-next:focus
+{
+    color:#fff;
+}
+header .carousel-control-prev:hover::after,.carousel-control-next:hover::after
+{
+    width: 100%;
+}
+@media only screen and (max-width: 991px)
+{
+    .layer h1
+    {
+        font-size: 4rem;
+    }
+    .layer h4
+    {
+        font-size: 1rem;
+    }
+
+}
+/****************************************End Header******************************/
+
+/****************************************Start About******************************/
+.txt-green
+{
+    color: #00c3da;
+}
+.about h6
+{
+    font-family: 'Poppins', sans-serif;
+    color: #1f1f1f;
+    font-weight: 500;
+    font-size: .9rem;
+    margin: 20px 0;
+    
+}
+
+.about p
+{
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-weight: 300;
+   width: 60%;
+   margin:auto;
+    margin-bottom:3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.btn-white-black
+{
+    border: 1px solid #dedede;
+    border-radius: 0%;
+    font-weight: 500;
+    font-size: 11px;
+}
+.btn-white-black:hover
+{
+    color: #fff;
+    background-color: #1f1f1f;
+}
+.fw-400
+{
+    font-weight: 400;
+    
+}
+/**********mediaQueriy about************/
+@media only screen and (max-width: 991px)
+{
+    .about p
+    {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+}
+
+/****************************************End About******************************/
+/****************************************Start Team******************************/
+.fw-700
+{
+    font-weight: 700;
+}
+#team
+{
+    border: 1px solid #eee;
+    
+}
+.team h2,.pricing>h2,.contact h2
+{  
+    color: #1f1f1f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    position: relative;
+    padding-bottom: 0px !important;
+}
+.team h2::after,.pricing>h2::after
+{
+    content: "C";
+    position: absolute;
+    top:-30px;
+    left:47%;
+
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    opacity: .1;
+}
+.team h4,.pricing h4,.contact h4{
+    font-size: 1rem;
+  
+}
+.team .item
+{
+    position: relative;
+}
+.overlay
+{
+    opacity: 0;
+    background-color:rgba(0, 195, 218, 0.9);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0;
+    transition:all .3s ease;
+}
+.team .item:hover .overlay
+{
+    opacity: 1;
+    height:100%;
+}
+.item-info ul li
+{
+    margin: 5px;
+   
+}
+.item-info ul li a
+{
+    color: #fff;
+    font-size: 12px
+}
+.item-footer h4
+{
+    font-size: .9rem;
+    font-weight: 600;
+}
+.item-footer span
+{
+    font-size:0.8rem !important; 
+}
+.c-white
+{
+    color: #fff;
+}
+
+/*******************************************End Team*****************************/
+
+/*******************************************Start Services*****************************/
+#services
+{
+    background-color: #504e4e;
+}
+.diamond
+{
+    width: 40px;
+    height: 40px;
+    background-color:#007067;
+    position: relative;
+    transform: rotate(-45deg);
+    border: 3px solid #fff;
+    margin: auto;
+}
+.diamond::after
+{ content: "";
+     position: absolute; 
+     top:10px; left:10px;
+      width: 27.5px; 
+      height: 27.5px; 
+    background-color:   #504e4e;
+    transform: rotate(-90deg);
+    border-right: 3px solid #fff;
+    border-top: 3px  solid #fff;
+}
+.services .item h4
+{
+    font-size:0.8rem !important; 
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-top: 2.2rem;
+}
+.services h2
+{
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 700;
+}
+.services p{
+    margin-right: 9rem;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+}
+.check-icon i
+{
+    font-size: 8px;
+    color: #fff;
+}
+.check-icon
+{
+    width: 17px;
+    height: 17px;
+    border-radius:50% ;
+  border:2px solid #fff;
+}
+.services ul li
+{
+    font-size: 1.05rem;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.services h2::after
+{
+    content: "W";
+    position: absolute;
+    top:-40px;
+    left:5px;
+
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    opacity: .1;
+}
+/**********mediaQueriy about************/
+@media only screen and (max-width: 991px)
+{
+    .services h2,.services p
+    {
+        text-align: center;
+        margin-right:0px;
+    }
+    .services h2::after
+    {
+        left:45%;
+    }
+}
+/*******************************************End Services*****************************/
+
+/*******************************************Start pricing*****************************/
+#pricing,#clients
+{
+    background-color: #f7f7f7;
+}
+
+.pricing .item
+{
+  
+    background-color: #fff;
+}
+.price-detail ul
+{
+    border-top: 1px solid #eee;
+}
+.price-detail ul li
+{
+ padding-top:.8rem ;
+ font-weight: 400;
+ font-size: .9rem;
+ line-height: 1.5;
+}
+.price-title h2
+{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #1f1f1f;
+    padding-left: 10px;
+}
+.price h2
+{
+    position: relative;
+}
+.price span
+{
+   position: absolute;
+   top: 0px;
+   left:0px;
+    font-size: 1rem;
+}
+
+.price-title h4
+{
+    font-size: .8rem;
+    font-weight: 400;
+    color: #1f1f1f;
+}
+.high-price
+{
+    color: #00c3da !important;
+    font-size: 4rem!important;
+
+}
+.high-type span
+{
+    background-color: #00c3da ;
+    color:#fff;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 8px 10px;
+}
+
+/*******************************************End Pricing*****************************/
+/**********************************************Start Clients************************************/
+#clients h6
+{
+    font-weight: 500;
+    font-size: 13px;
+    color: #1f1f1f;
+    
+}
+#carouselClients img
+{
+    width:90px;
+    height:90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -125px;
+}
+#carouselClients .carousel-item p
+{
+    margin: 25px 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#carouselClients .carousel-item span
+{
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+#carouselClients .carousel-item h4 {
+    color: #1f1f1f;
+    font-weight: 700;
+}
+}
+#carouselClients .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: #00c3da;;
+    border-radius: 50%;
+}
+#carouselClients .carousel-control-next, .carousel-control-prev
+{
+    color: #1c1c1c ;
+    font-size: 2rem;
+   
+}
+#carouselClients .carousel-control-prev
+{
+    justify-content: start;
+}
+#carouselClients .carousel-control-next
+{
+    justify-content: flex-end;
+}
+#carouselClients .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover
+{
+    color: #00c3da ;
+}     
+#carouselClients .carousel-item div
+{
+    padding: 75px 100px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    max-width: 750px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+/********************************************End Clients*******************************************/
+
+/**********************************************Start Contact******************************************/
+.contact h2::after
+{
+    content: "G";
+    position: absolute;
+    top:-30px;
+    left:0;
+
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    opacity: .1;
+}
+
+.contact .form-control {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 50px;
+    border: 2px solid #eee;
+    border-radius: 0;
+    box-shadow: none;
+   
+}
+.contact .form-control:focus {
+    border-color: #1f1f1f;
+}
+.contact .form-group label {
+    color: #1f1f1f;
+    font-weight: 500;
+    font-size: .8rem;
+}
+textarea.form-control {
+    overflow: hidden;
+    min-height: 110px;
+}
+@media only screen and (max-width: 991px)
+{
+    .contact form
+    {
+        width: 100%;
+    }
+   
+}
+/**********************************************End Contact******************************************/
